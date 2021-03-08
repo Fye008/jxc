@@ -14,7 +14,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-@Controller
+@RestController
 @RequestMapping("/purchaseListGoods")
 public class PurchaseListGoodsController {
 
@@ -23,7 +23,6 @@ public class PurchaseListGoodsController {
 
 
     @PostMapping("/save")
-    @ResponseBody
     public ServiceVO savePurchaseList(@RequestParam String purchaseNumber,
                                       PurchaseList purchaseList,
                                       String purchaseListGoodsStr) {
@@ -36,7 +35,6 @@ public class PurchaseListGoodsController {
 
 
     @PostMapping("/list")
-    @ResponseBody
     public Map<String, Object> list(@RequestParam(required = false) String purchaseNumber,
                                     @RequestParam(required = false) Integer supplierId,
                                     @RequestParam(required = false) Integer state,
@@ -53,13 +51,24 @@ public class PurchaseListGoodsController {
     }
 
     @PostMapping("/goodsList")
-    @ResponseBody
     public Map<String, Object> goodsList(Integer purchaseListId) {
         Map<String, Object> map = new HashMap<>();
         System.out.println("++++++++++++++++++" + purchaseListId + "+++++++++");
         List<PurchaseListGoods> list = purchaseListGoodsService.goodList(purchaseListId);
         map.put("rows", list);
         return map;
+    }
+
+    /**
+     * 根据id删除进货单
+     * @param purchaseListId
+     * @return
+     */
+    @PostMapping("/delete")
+    public ServiceVO deleteByPurchaseListId(Integer purchaseListId) {
+
+        purchaseListGoodsService.deleteByPurchaseListId(purchaseListId);
+        return new ServiceVO(SuccessCode.SUCCESS_CODE, SuccessCode.SUCCESS_MESS);
     }
 
 

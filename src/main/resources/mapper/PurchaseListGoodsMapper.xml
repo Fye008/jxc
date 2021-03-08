@@ -31,6 +31,5 @@
 
     <select id="goodListByPurchaseListId" resultMap="BaseResultMap" >
         select * from t_purchase_list_goods where purchase_list_id = #{value}
-
     </select>
 </mapper>

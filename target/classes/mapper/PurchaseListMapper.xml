@@ -53,7 +53,11 @@
                 and purchase_date &lt;= #{eTime}
             </if>
         </where>
-
     </select>
+
+
+    <delete id="deleteByPurchaseListId">
+        delete from t_purchase_list where purchase_list_id = #{value}
+    </delete>
 
 </mapper>

@@ -27,6 +27,6 @@ public class ReturnListGoodsController {
         returnListGoodsService.returnListGoods(returnNumber,returnList, returnListGoodsStr);
 
         return new ServiceVO(SuccessCode.SUCCESS_CODE, SuccessCode.SUCCESS_MESS);
-    }
+}
 
 }

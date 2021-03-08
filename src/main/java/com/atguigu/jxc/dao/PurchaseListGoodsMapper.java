@@ -14,4 +14,6 @@ public interface PurchaseListGoodsMapper {
     void batchInsertPurchaseGoodsList(@Param("purchaseListId") Integer purchaseListId, @Param("goodsVos") List<GoodsVo> goodsVos);
 
     List<PurchaseListGoods> goodListByPurchaseListId(Integer purchaseListId);
+
+
 }

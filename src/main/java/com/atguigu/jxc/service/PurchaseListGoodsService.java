@@ -12,4 +12,6 @@ public interface PurchaseListGoodsService {
     List<PurchaseList> list(String purchaseNumber, Integer supplierId, Integer state, String sTime, String eTime);
 
     List<PurchaseListGoods> goodList(Integer purchaseListId);
+
+    void deleteByPurchaseListId(Integer purchaseListId);
 }
