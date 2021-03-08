@@ -3,6 +3,7 @@ package com.atguigu.jxc.controller;
 import com.atguigu.jxc.domain.ServiceVO;
 import com.atguigu.jxc.domain.SuccessCode;
 import com.atguigu.jxc.entity.ReturnList;
+import com.atguigu.jxc.entity.ReturnListGoods;
 import com.atguigu.jxc.service.ReturnListGoodsService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
@@ -41,5 +42,15 @@ public class ReturnListGoodsController {
 
     }
 
+
+    @PostMapping("/goodsList")
+    public Map<String,Object> goodList(Integer returnListId){
+
+        Map<String, Object> map = new HashMap<>();
+        List<ReturnListGoods> list = returnListGoodsService.goodList(returnListId);
+        map.put("rows", list);
+        return map;
+
+    }
 
 }

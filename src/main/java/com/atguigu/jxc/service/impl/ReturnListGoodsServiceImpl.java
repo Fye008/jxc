@@ -3,6 +3,7 @@ package com.atguigu.jxc.service.impl;
 import com.atguigu.jxc.dao.ReturnListGoodsMapper;
 import com.atguigu.jxc.dao.ReturnListMapper;
 import com.atguigu.jxc.entity.ReturnList;
+import com.atguigu.jxc.entity.ReturnListGoods;
 import com.atguigu.jxc.service.ReturnListGoodsService;
 import com.atguigu.jxc.vo.GoodsVo;
 import com.google.gson.Gson;
@@ -31,7 +32,6 @@ public class ReturnListGoodsServiceImpl implements ReturnListGoodsService {
         //新增退款订单
         returnListMapper.saveReturnOrder(returnList);
 
-
         Gson gson = new Gson();
         List<GoodsVo> goodsVos = gson.fromJson(returnListGoodsStr, new TypeToken<List<GoodsVo>>() {
         }.getType());
@@ -50,5 +50,11 @@ public class ReturnListGoodsServiceImpl implements ReturnListGoodsService {
 
         return returnListMapper.list(returnNumber, supplierId, state, sTime, eTime);
 
+    }
+
+    @Override
+    public List<ReturnListGoods> goodList(Integer returnListId) {
+
+        return returnListGoodsMapper.goodList(returnListId);
     }
 }

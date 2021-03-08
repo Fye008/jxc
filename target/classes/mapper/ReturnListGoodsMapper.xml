@@ -5,6 +5,20 @@
 
 <mapper namespace="com.atguigu.jxc.dao.ReturnListGoodsMapper">
 
+    <resultMap id="BaseResultMap" type="com.atguigu.jxc.entity.ReturnListGoods">
+        <result column="return_list_goods_id" property="returnListGoodsId" jdbcType="INTEGER" />
+        <result column="goods_id" property="goodsId" jdbcType="INTEGER" />
+        <result column="goods_code" property="goodsCode" jdbcType="INTEGER" />
+        <result column="goods_name" property="goodsName" jdbcType="INTEGER" />
+        <result column="goods_model" property="goodsModel" jdbcType="VARCHAR" />
+        <result column="goods_unit" property="goodsUnit" jdbcType="VARCHAR" />
+        <result column="goods_num" property="goodsNum" jdbcType="VARCHAR" />
+        <result column="price" property="price" jdbcType="VARCHAR" />
+        <result column="total" property="total" jdbcType="VARCHAR" />
+        <result column="return_list_id" property="returnListId" jdbcType="VARCHAR" />
+        <result column="goods_type_id" property="goodsTypeId" jdbcType="VARCHAR" />
+    </resultMap>
+
 
     <insert id="saveReturnGoodsOrder">
 
@@ -18,5 +32,10 @@
         </foreach>
 
     </insert>
+
+    <select id="goodList" resultMap="BaseResultMap">
+
+        select * from t_return_list_goods where return_list_id = #{value}
+    </select>
 
 </mapper>
