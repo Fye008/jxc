@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.atguigu.jxc.dao.ReturnListGoodsMapper">
+
+
+    <insert id="saveReturnGoodsOrder">
+
+        INSERT INTO t_return_list_goods (GOODS_ID, GOODS_CODE, GOODS_NAME, GOODS_MODEL, GOODS_UNIT, GOODS_NUM, PRICE,
+        TOTAL, RETURN_LIST_ID, GOODS_TYPE_ID)
+
+        VALUES
+        <foreach collection="goods" item="good" separator=",">
+            (#{good.goodsId},#{good.goodsCode},#{good.goodsName},#{good.goodsModel},#{good.goodsUnit},#{good.goodsNum},#{good.price},
+            #{good.total},#{returnListId},#{good.goodsTypeId})
+        </foreach>
+
+    </insert>
+
+</mapper>

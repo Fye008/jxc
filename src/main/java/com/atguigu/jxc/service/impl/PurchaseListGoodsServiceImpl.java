@@ -51,4 +51,10 @@ public class PurchaseListGoodsServiceImpl implements PurchaseListGoodsService {
 
 
     }
+
+    @Override
+    public List<PurchaseListGoods> goodList(Integer purchaseListId) {
+        return purchaseListGoodsMapper.goodListByPurchaseListId(purchaseListId);
+
+    }
 }

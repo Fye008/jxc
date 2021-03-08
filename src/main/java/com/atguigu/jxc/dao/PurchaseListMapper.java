@@ -14,4 +14,6 @@ public interface PurchaseListMapper {
 
     List<PurchaseList> list(@Param("purchaseNumber") String purchaseNumber, @Param("supplierId") Integer supplierId,
                                  @Param("state") Integer state, @Param("sTime") String sTime, @Param("eTime") String eTime);
+
+    List<PurchaseListGoods> goodList(Integer purchaseListId);
 }

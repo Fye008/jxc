@@ -45,11 +45,20 @@ public class PurchaseListGoodsController {
 
 
         List<PurchaseList> list = purchaseListGoodsService.list(purchaseNumber, supplierId, state, sTime, eTime);
-        System.out.println("++++++++++++++++++++++" + list  + " +++++++++++++++++++ ");
-
+        System.out.println("++++++++++++++++++++++" + list + " +++++++++++++++++++ ");
 
         Map<String, Object> map = new HashMap<>();
-        map.put("rows",list);
+        map.put("rows", list);
+        return map;
+    }
+
+    @PostMapping("/goodsList")
+    @ResponseBody
+    public Map<String, Object> goodsList(Integer purchaseListId) {
+        Map<String, Object> map = new HashMap<>();
+        System.out.println("++++++++++++++++++" + purchaseListId + "+++++++++");
+        List<PurchaseListGoods> list = purchaseListGoodsService.goodList(purchaseListId);
+        map.put("rows", list);
         return map;
     }
 
