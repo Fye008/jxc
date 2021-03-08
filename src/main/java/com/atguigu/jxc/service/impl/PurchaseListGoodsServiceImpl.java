@@ -31,7 +31,7 @@ public class PurchaseListGoodsServiceImpl implements PurchaseListGoodsService {
     public void savePurchaseList(String purchaseNumber, PurchaseList purchaseList, String purchaseListGoodsStr) {
 
         Gson gson = new Gson();
-        List<GoodsVo> goodsVos = gson.fromJson(purchaseListGoodsStr, new TypeToken<List<GoodsVo>>() {}.getType());
+        List<PurchaseListGoods> goodsVos = gson.fromJson(purchaseListGoodsStr, new TypeToken<List<PurchaseListGoods>>() {}.getType());
 
         purchaseList.setPurchaseNumber(purchaseNumber);
 
