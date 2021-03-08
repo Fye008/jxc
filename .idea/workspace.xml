@@ -4,14 +4,11 @@
     <list default="true" id="95abdd53-462f-45ab-93f8-84d2b09db443" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/atguigu/jxc/controller/ReturnListGoodsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/atguigu/jxc/controller/ReturnListGoodsController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/atguigu/jxc/dao/ReturnListGoodsMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/atguigu/jxc/dao/ReturnListGoodsMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/atguigu/jxc/dao/ReturnListMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/atguigu/jxc/dao/ReturnListMapper.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/atguigu/jxc/service/ReturnListGoodsService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/atguigu/jxc/service/ReturnListGoodsService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/atguigu/jxc/service/impl/ReturnListGoodsServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/atguigu/jxc/service/impl/ReturnListGoodsServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/ReturnListGoodsMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mapper/ReturnListGoodsMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/atguigu/jxc/controller/ReturnListGoodsController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/atguigu/jxc/controller/ReturnListGoodsController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/atguigu/jxc/service/ReturnListGoodsService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/atguigu/jxc/service/ReturnListGoodsService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/atguigu/jxc/service/impl/ReturnListGoodsServiceImpl$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/atguigu/jxc/service/impl/ReturnListGoodsServiceImpl$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/atguigu/jxc/service/impl/ReturnListGoodsServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/atguigu/jxc/service/impl/ReturnListGoodsServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/ReturnListMpper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mapper/ReturnListMpper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/atguigu/jxc/controller/ReturnListGoodsController.class" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/classes/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -60,11 +57,74 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/ReturnListGoodsMapper.xml">
           <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="342">
+              <caret line="34" selection-start-line="34" selection-end-line="34" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/PurchaseListMapper.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-162">
+              <caret line="32" selection-start-line="32" selection-end-line="54" selection-end-column="16" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/atguigu/jxc/controller/ReturnListGoodsController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="398">
+              <caret line="56" column="37" selection-start-line="56" selection-start-column="37" selection-end-line="56" selection-end-column="37" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/atguigu/jxc/service/ReturnListGoodsService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="210">
+              <caret line="13" selection-start-line="13" selection-end-line="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/atguigu/jxc/service/impl/ReturnListGoodsServiceImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="447">
+              <caret line="63" column="31" selection-start-line="63" selection-start-column="31" selection-end-line="63" selection-end-column="31" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/atguigu/jxc/dao/ReturnListMapper.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="252">
+              <caret line="12" selection-start-line="12" selection-end-line="12" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/ReturnListMpper.xml">
+          <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="91">
-              <caret line="34" lean-forward="true" selection-start-line="34" selection-end-line="34" />
+              <caret line="55" column="23" selection-start-line="55" selection-start-column="23" selection-end-line="55" selection-end-column="23" />
             </state>
           </provider>
         </entry>
@@ -116,13 +176,13 @@
         <option value="$PROJECT_DIR$/src/main/java/com/atguigu/jxc/entity/PurchaseListGoods.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/atguigu/jxc/service/impl/PurchaseListGoodsServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/resources/mapper/PurchaseListMapper.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/atguigu/jxc/dao/ReturnListMapper.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/mapper/ReturnListMpper.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/atguigu/jxc/dao/ReturnListGoodsMapper.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/mapper/ReturnListGoodsMapper.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/atguigu/jxc/controller/ReturnListGoodsController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/atguigu/jxc/service/ReturnListGoodsService.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/atguigu/jxc/service/impl/ReturnListGoodsServiceImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/atguigu/jxc/dao/ReturnListGoodsMapper.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/mapper/ReturnListGoodsMapper.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/atguigu/jxc/dao/ReturnListMapper.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/mapper/ReturnListMpper.xml" />
       </list>
     </option>
   </component>
@@ -328,7 +388,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1615167779332</updated>
-      <workItem from="1615167780936" duration="35116000" />
+      <workItem from="1615167780936" duration="35838000" />
     </task>
     <task id="LOCAL-00001" summary="完成订单详情查询">
       <created>1615203773782</created>
@@ -352,7 +412,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="35116000" />
+    <option name="totallyTimeSpent" value="35838000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -374,7 +434,7 @@
       <window_info id="Capture Tool" order="5" />
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info id="Structure" order="7" side_tool="true" weight="0.25" />
-      <window_info content_ui="combo" id="Project" order="8" weight="0.4114921" />
+      <window_info content_ui="combo" id="Project" order="8" visible="true" weight="0.41085792" />
       <window_info anchor="bottom" id="Tail" order="0" />
       <window_info anchor="bottom" id="Spring" order="1" />
       <window_info anchor="bottom" id="Messages" order="2" />
@@ -756,37 +816,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/atguigu/jxc/dao/ReturnListMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="12" column="21" selection-start-line="12" selection-start-column="21" selection-end-line="12" selection-end-column="21" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/atguigu/jxc/entity/ReturnList.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="273">
           <caret line="13" column="12" selection-start-line="13" selection-start-column="12" selection-end-line="17" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/atguigu/jxc/controller/ReturnListGoodsController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="461">
-          <caret line="49" column="64" selection-start-line="49" selection-start-column="64" selection-end-line="49" selection-end-column="64" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/atguigu/jxc/service/ReturnListGoodsService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="13" column="25" selection-start-line="13" selection-start-column="4" selection-end-line="13" selection-end-column="25" />
         </state>
       </provider>
     </entry>
@@ -797,30 +830,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/PurchaseListMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="32" selection-start-line="32" selection-end-line="54" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/ReturnListMpper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="147">
-          <caret line="7" selection-start-line="7" selection-end-line="17" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/atguigu/jxc/service/impl/ReturnListGoodsServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="426">
-          <caret line="57" column="45" selection-start-line="57" selection-start-column="45" selection-end-line="57" selection-end-column="45" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/atguigu/jxc/entity/ReturnListGoods.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="399">
@@ -828,10 +837,61 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/atguigu/jxc/controller/ReturnListGoodsController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="398">
+          <caret line="56" column="37" selection-start-line="56" selection-start-column="37" selection-end-line="56" selection-end-column="37" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/atguigu/jxc/service/ReturnListGoodsService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="13" selection-start-line="13" selection-end-line="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/atguigu/jxc/service/impl/ReturnListGoodsServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="447">
+          <caret line="63" column="31" selection-start-line="63" selection-start-column="31" selection-end-line="63" selection-end-column="31" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/atguigu/jxc/dao/ReturnListMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="12" selection-start-line="12" selection-end-line="12" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/ReturnListGoodsMapper.xml">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="34" selection-start-line="34" selection-end-line="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/PurchaseListMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-162">
+          <caret line="32" selection-start-line="32" selection-end-line="54" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/ReturnListMpper.xml">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="91">
-          <caret line="34" lean-forward="true" selection-start-line="34" selection-end-line="34" />
+          <caret line="55" column="23" selection-start-line="55" selection-start-column="23" selection-end-line="55" selection-end-column="23" />
         </state>
       </provider>
     </entry>

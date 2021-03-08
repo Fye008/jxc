@@ -50,7 +50,19 @@ public class ReturnListGoodsController {
         List<ReturnListGoods> list = returnListGoodsService.goodList(returnListId);
         map.put("rows", list);
         return map;
+    }
+
+    @PostMapping("/delete")
+    public ServiceVO delete(Integer returnListId){
+        returnListGoodsService.delete(returnListId);
+        return new ServiceVO(SuccessCode.SUCCESS_CODE,SuccessCode.SUCCESS_MESS);
 
     }
+
+
+
+
+
+
 
 }

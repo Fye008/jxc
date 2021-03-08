@@ -57,4 +57,11 @@ public class ReturnListGoodsServiceImpl implements ReturnListGoodsService {
 
         return returnListGoodsMapper.goodList(returnListId);
     }
+
+    @Override
+    public void delete(Integer returnListId) {
+
+        returnListMapper.delete(returnListId);
+
+    }
 }

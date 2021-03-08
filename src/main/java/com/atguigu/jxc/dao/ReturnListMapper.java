@@ -12,4 +12,6 @@ public interface ReturnListMapper {
 
     List<ReturnList> list(@Param("returnNumber") String returnNumber, @Param("supplierId") Integer supplierId,
                           @Param("state")Integer state, @Param("sTime")  String sTime, @Param("eTime")  String eTime);
+
+    void delete(Integer returnListId);
 }

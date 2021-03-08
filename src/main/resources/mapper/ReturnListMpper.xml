@@ -6,15 +6,15 @@
 <mapper namespace="com.atguigu.jxc.dao.ReturnListMapper">
 
     <resultMap id="BaseResultMap" type="com.atguigu.jxc.entity.ReturnList">
-        <result column="return_list_id" property="returnListId" jdbcType="INTEGER" />
-        <result column="return_number" property="returnNumber" jdbcType="INTEGER" />
-        <result column="return_date" property="returnDate" jdbcType="INTEGER" />
-        <result column="amount_paid" property="amountPaid" jdbcType="INTEGER" />
-        <result column="amount_payable" property="amountPayable" jdbcType="VARCHAR" />
-        <result column="remarks" property="remarks" jdbcType="VARCHAR" />
-        <result column="state" property="state" jdbcType="VARCHAR" />
-        <result column="supplier_id" property="supplierId" jdbcType="VARCHAR" />
-        <result column="user_id" property="userId" jdbcType="VARCHAR" />
+        <result column="return_list_id" property="returnListId" jdbcType="INTEGER"/>
+        <result column="return_number" property="returnNumber" jdbcType="INTEGER"/>
+        <result column="return_date" property="returnDate" jdbcType="INTEGER"/>
+        <result column="amount_paid" property="amountPaid" jdbcType="INTEGER"/>
+        <result column="amount_payable" property="amountPayable" jdbcType="VARCHAR"/>
+        <result column="remarks" property="remarks" jdbcType="VARCHAR"/>
+        <result column="state" property="state" jdbcType="VARCHAR"/>
+        <result column="supplier_id" property="supplierId" jdbcType="VARCHAR"/>
+        <result column="user_id" property="userId" jdbcType="VARCHAR"/>
     </resultMap>
 
     <insert id="saveReturnOrder" parameterType="com.atguigu.jxc.entity.ReturnList"
@@ -44,13 +44,17 @@
 
             <if test="sTime != null and sTime != ''">
 
-                and  return_date >= #{sTime}
+                and return_date >= #{sTime}
             </if>
 
             <if test="eTime != null and eTime != ''">
                 and return_date &lt;= #{eTime}
             </if>
         </where>
-
     </select>
+
+    <delete id="delete">
+        delete from t_return_list where return_list_id = #{value}
+    </delete>
+
 </mapper>

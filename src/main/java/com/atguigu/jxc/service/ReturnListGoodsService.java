@@ -12,4 +12,6 @@ public interface ReturnListGoodsService {
     List<ReturnList> list(String returnNumber, Integer supplierId, Integer state, String sTime, String eTime);
 
     List<ReturnListGoods> goodList(Integer returnListId);
+
+    void delete(Integer returnListId);
 }
