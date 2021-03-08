@@ -5,6 +5,18 @@
 
 <mapper namespace="com.atguigu.jxc.dao.ReturnListMapper">
 
+    <resultMap id="BaseResultMap" type="com.atguigu.jxc.entity.ReturnList">
+        <result column="return_list_id" property="returnListId" jdbcType="INTEGER" />
+        <result column="return_number" property="returnNumber" jdbcType="INTEGER" />
+        <result column="return_date" property="returnDate" jdbcType="INTEGER" />
+        <result column="amount_paid" property="amountPaid" jdbcType="INTEGER" />
+        <result column="amount_payable" property="amountPayable" jdbcType="VARCHAR" />
+        <result column="remarks" property="remarks" jdbcType="VARCHAR" />
+        <result column="state" property="state" jdbcType="VARCHAR" />
+        <result column="supplier_id" property="supplierId" jdbcType="VARCHAR" />
+        <result column="user_id" property="userId" jdbcType="VARCHAR" />
+    </resultMap>
+
     <insert id="saveReturnOrder" parameterType="com.atguigu.jxc.entity.ReturnList"
             useGeneratedKeys="true" keyProperty="returnListId" keyColumn="return_list_id">
         insert into t_return_list (return_list_id, return_number, return_date, amount_paid, amount_payable, remarks,
@@ -13,4 +25,32 @@
         (null,#{returnNumber},#{returnDate},#{amountPaid},#{amountPayable},#{remarks},#{state},#{supplierId},#{userId})
     </insert>
 
+
+    <select id="list" resultMap="BaseResultMap">
+
+        select * from t_return_list
+        <where>
+            <if test="returnNumber != null and returnNumber != ''">
+                return_number = #{returnNumber}
+            </if>
+
+            <if test="supplierId != null and supplierId != ''">
+                and supplier_id = #{supplierId}
+            </if>
+
+            <if test="state != null and state != ''">
+                and state = #{state}
+            </if>
+
+            <if test="sTime != null and sTime != ''">
+
+                and  return_date >= #{sTime}
+            </if>
+
+            <if test="eTime != null and eTime != ''">
+                and return_date &lt;= #{eTime}
+            </if>
+        </where>
+
+    </select>
 </mapper>

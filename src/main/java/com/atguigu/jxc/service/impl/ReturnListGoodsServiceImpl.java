@@ -44,4 +44,11 @@ public class ReturnListGoodsServiceImpl implements ReturnListGoodsService {
         //todo 对应库存减少
 
     }
+
+    @Override
+    public List<ReturnList> list(String returnNumber, Integer supplierId, Integer state, String sTime, String eTime) {
+
+        return returnListMapper.list(returnNumber, supplierId, state, sTime, eTime);
+
+    }
 }

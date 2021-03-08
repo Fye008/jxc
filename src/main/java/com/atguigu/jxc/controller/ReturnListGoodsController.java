@@ -5,13 +5,13 @@ import com.atguigu.jxc.domain.SuccessCode;
 import com.atguigu.jxc.entity.ReturnList;
 import com.atguigu.jxc.service.ReturnListGoodsService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.bind.annotation.*;
 
-@Controller
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+
+@RestController
 @RequestMapping("/returnListGoods")
 public class ReturnListGoodsController {
 
@@ -19,14 +19,27 @@ public class ReturnListGoodsController {
     private ReturnListGoodsService returnListGoodsService;
 
     @PostMapping("/save")
-    @ResponseBody
     public ServiceVO returnListGoods(@RequestParam String returnNumber,
                                      ReturnList returnList,
                                      String returnListGoodsStr) {
 
-        returnListGoodsService.returnListGoods(returnNumber,returnList, returnListGoodsStr);
+        returnListGoodsService.returnListGoods(returnNumber, returnList, returnListGoodsStr);
 
         return new ServiceVO(SuccessCode.SUCCESS_CODE, SuccessCode.SUCCESS_MESS);
-}
+    }
+
+    @PostMapping("/list")
+    public Map<String, Object> list(@RequestParam(required = false) String returnNumber,
+                                    @RequestParam(required = false) Integer supplierId,
+                                    @RequestParam(required = false) Integer state,
+                                    @RequestParam(required = false) String sTime,
+                                    @RequestParam(required = false) String eTime) {
+        Map<String, Object> map = new HashMap<>();
+        List<ReturnList> list = returnListGoodsService.list(returnNumber, supplierId, state, sTime, eTime);
+        map.put("rows", list);
+        return map;
+
+    }
+
 
 }
